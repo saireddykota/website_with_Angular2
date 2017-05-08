@@ -1,0 +1,116 @@
+ #header{
+	float: left;
+	display: inline;
+	width: 100%;
+    background-color: #1A4683;	
+}
+
+  .dropdown-menu li a:hover {
+   color: #78ADC9;
+  }
+
+
+#navbar
+{
+    background: #1A4683;
+	padding-left: 650px;
+
+	
+}
+
+.navbar-header
+{
+	background: #1A4683;
+	height: 100%;
+	width: 200%;
+	position: absolute;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  margin-top: -15px; 
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.navbar-default {
+  background-color: #1A4683;
+  border-color: transparent;
+}
+#navbar{overflow-x: hidden;}
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: #fff;
+  padding: 30px 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  background-color: transparent;
+    color: #78ADC9;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+    color: #78ADC9;
+}
+.navbar-nav > li > .dropdown-menu {
+  background-color: #204987; 
+    color: #78ADC9;
+}
+.navbar-nav > li > .dropdown-menu:before { 
+  border-bottom: 15px solid #204987; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 25px;
+  top: -15px;
+  width: 0;
+
+}
+.navbar-nav > li > .dropdown-menu li a {
+ background:#204987;
+  color: #f5f5f1;
+  display: block;  
+  font-size: 16px;
+  opacity: 1.0;
+  padding: 6px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navbar-nav > li > .dropdown-menu li a: hover {
+
+
+}
+ul li:hover {background: #204987;}
+ul li:hover ul {display: block;}
+ 
+
+.dropdown-menu li a:hover {
+  
+    color:#78ADC9;
+}
+.navbar-nav > li > .dropdown-toggle > li:last-child a {
+  border-bottom: medium none;
+}
+.dropdown-toggle > li > a:focus, .dropdown-toggle > li > a:hover {
+  background-color:none;  
+  text-decoration: none;
+  
+}
+.dropdown-toggle > .active > a, .dropdown-toggle> .active > a:focus, .dropdown-menu > .active > a:hover {
+  background-color: transparent;  
+  color: #78ADC9;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+    color: #78ADC9;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}

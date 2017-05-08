@@ -1,0 +1,71 @@
+<app-publicheader></app-publicheader>
+<div class="container">
+  <h2 style="color: #4177b3;font-weight:600;">Submit Resume</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit()" action="" method="post" target="_top">
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">{{errorMessage}}</div>
+  <div class="col-sm-12 form-group">
+   
+
+  <label for="resume-firstname">First Name*</label>
+    <input required type="text"  class="form-control"  id="resume-firstname"  [(ngModel)]="post.firstname"  name="firstname" 
+    placeholder="First Name"><br>
+
+    <label for="resume-lastname">Last Name*</label>
+    <input required type="text"  class="form-control"  id="resume-lastname"  [(ngModel)]="post.lastname"  name="lastname" 
+    placeholder="Last Name"><br>
+
+    <label for="resume-company">Compnany*</label>
+    <input required type="text"  class="form-control"  id="resume-company"  [(ngModel)]="post.company"  name="company" 
+    placeholder="Compnany"><br>
+
+    <label for="resume-email">E-mail*</label>
+    <input required type="text"  class="form-control"  id="resume-email"  [(ngModel)]="post.email"  name="email" 
+    placeholder="E-mail"><br>
+
+    <label for="resume-address1">Address*</label>
+    <input required type="text"  class="form-control"  id="resume-address"  [(ngModel)]="post.address"  name="address" 
+    placeholder="Address"><br>
+
+
+    <label for="resume-city">City*</label>
+    <input required type="text"  class="form-control"  id="resume-city"  [(ngModel)]="post.city"  name="city" 
+    placeholder="City"><br>
+
+    <label for="resume-state">State*</label>
+    <input required type="text"  class="form-control"  id="resume-state"  [(ngModel)]="post.state"  name="state" 
+    placeholder="State"><br>
+
+
+<label for="resume-country">Country*</label>
+    <input required type="text"  class="form-control"  id="resume-country"  [(ngModel)]="post.country"  name="country" 
+    placeholder="Country"><br>
+
+    <label for="resume-zipcode">Zip Code*</label>
+    <input required type="text"  class="form-control"  id="resume-zipcode"  [(ngModel)]="post.zipcode"  name="zipcode" 
+    placeholder="Zip Code"><br>
+
+    <label for="resume-phone">Phone Number*</label>
+    <input required type="text"  class="form-control"  id="resume-phone"  [(ngModel)]="post.phone"  name="phone" 
+    placeholder="Phone Number"><br>
+
+
+    <label for="resume-resumepath">Resume*</label>
+    <input  type="text" style="display: none"  class="form-control"  id="resume-resumepath"  [(ngModel)]="post.resumepath"  name="resumepath" 
+    placeholder="Resume Path"><br>
+
+<input type="file" (change)="fileEvent($event)" id= "resume-file" /><br>
+
+ <input class="btn btn-default" type="submit" class = "btn btn-lg btn-primary" value="Submit"><br><br>
+
+  <div *ngIf="successMessage" class="alert alert-success" role="alert">{{successMessage}}</div>
+ 
+
+   </div>
+
+</form>
+</div>
+<br>
+<app-publicfooter></app-publicfooter>
+
+
+

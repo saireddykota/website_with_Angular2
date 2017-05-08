@@ -1,0 +1,14 @@
+.row{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#itjobs{
+    list-style: none;
+    position: relative;
+}
+
+#itjobs li{
+    display: inline;
+}
+

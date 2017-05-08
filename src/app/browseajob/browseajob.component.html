@@ -1,0 +1,40 @@
+<app-publicheader></app-publicheader>
+<br>
+<br>
+<br>
+<br>
+<h1>
+	{{title}}
+</h1>
+<div *ngIf="postjobs.length" class="browse-list">
+	<article *ngFor="let postjob of postjobs">
+		
+		<div class="row">
+			<div class="col-md-8">
+				<ul id="BA" style="padding-bottom:0px;">						
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+					<div class="row">
+						<a routerLink="/desc" id="link" data-toggle="modal" data-target="#Pop"><b>{{postjob.jobtitle}}</b></a>
+							<ul id="itjobs">
+							<li><i class="fa fa-briefcase"></i>{{postjob.experience}}</li>
+							<li><i class="fa fa-calendar" style="padding-left:25px;"></i>{{postjob.posteddate}}</li>
+							<li><i class="fa fa-map-marker" style="padding-left:25px;"></i>{{postjob.city}},{{postjob.state}}</li> 
+							</ul>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<button id="rerun-button" type="button" class="btn btn-primary  rerun-button" data-toggle="modal" data-target="#Pop" >Apply</button>										
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6" style="padding-right:10px;">
+						<button  id="rerun-button" type="button" class="btn btn-primary dropdown-toggle  rerun-button" data-toggle="dropdown" >Share <span class="caret"></span></button>						
+						     <ul class="dropdown-menu">								  
+								<li ><a href="https://twitter.com/" class="fa fa-twitter"> <label> &nbsp </label>  Tweet this job</a></li>										<li><a href="https://www.linkedin.com/" class="fa fa-linkedin"><label> &nbsp </label>  Share on Linkedin</a></li>
+								<li><a href="https://accounts.google.com/" class="fa fa-envelope"><label> &nbsp </label> Email your friend</a></li>
+							</ul>														 
+					</div>
+				</ul>
+			</div>
+		</div>
+		
+	</article>
+</div>
+<app-publicfooter></app-publicfooter>

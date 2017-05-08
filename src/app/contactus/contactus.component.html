@@ -1,0 +1,26 @@
+<app-publicheader></app-publicheader>
+
+<div class="container">
+  <h2 style="color: #4177b3;font-weight:600;">Contact Us</h2>
+  <form #f="ngForm" (ngSubmit)="onSubmit()" action="https://www.google.com/" method="post" target="_top">
+  <div *ngIf="errorMessage" class="alert alert-danger" role="alert">{{errorMessage}}</div>
+  <div class="col-sm-7 form-group">
+    <label for="contactus-name">Name</label>
+    <input required type="text" class="form-control" id="contactus-name" [(ngModel)]="post.name" name="name" placeholder="name*"><br>
+ 
+    <label for="contactus-emailaddress">Email address</label>
+    <input required type="text"  class="form-control"   id="contactus-emailaddress"   [(ngModel)]="post.emailaddress" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="emailaddress*"   placeholder="contact@spruceinfotech.com*"><br>
+  
+    <label for="contactus-phonenumber">Phone number</label>
+    <input required type="text" class="form-control" id="contactus-phonenumber" [(ngModel)]="post.phonenumber" name="phonenumber" placeholder="phonenumber"><br>
+
+    <label for="contactus-message">Message</label>
+    <textarea required type="text" class="form-control" rows="4" id="contactus-message" [(ngModel)]="post.message" name="message" placeholder="Your message here*"></textarea><br>
+
+    <button id="submit" type="submit" class = "btn btn-md btn-primary pull-left" value="Submit" ng-click="onSubmit()">Send message</button>
+
+  </div>
+  </form>
+</div>
+
+<app-publicfooter></app-publicfooter>
